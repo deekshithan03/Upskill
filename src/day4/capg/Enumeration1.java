@@ -1,13 +1,15 @@
 package day4.capg;
 
-enum Cars{
-	Honda(2000),Kia(3000),Toyota(1500),Maruthi(4000);
-	
+enum Cars {
+	HONDA(2000), KIA(3000), TOYOTA(1500), MARUTHI(4000);
+
 	private int price;
-	//object created in same class
-	private Cars(int price){        
+
+	// object created in same class
+	private Cars(int price) {
 		this.price = price;
 	}
+
 	public int getPrice() {
 		return price;
 	}
@@ -15,10 +17,24 @@ enum Cars{
 
 public class Enumeration1 {
 	public static void main(String[] args) {
-		Cars car = Cars.Maruthi;
-		System.out.println(car +":"+car.getPrice());
+		Cars car = Cars.MARUTHI;
+        switch(car) {
 		
+	  	 case HONDA:
+			System.out.println(car +":"+car.getPrice());
+			break;
+		 case KIA:
+			System.out.println(car +":"+car.getPrice());
+			break;
+		 case TOYOTA:
+			System.out.println(car +":"+car.getPrice());
+			break;
+		 default:
+			System.out.println(car +":"+car.getPrice());
+			break;
+		}
 //		Cars[] cars = Cars.values();
+        System.out.println("Array of Objects:");
 		for(Cars c:Cars.values()) {
 			System.out.println(c+ ":"+ car.getPrice());
 		}

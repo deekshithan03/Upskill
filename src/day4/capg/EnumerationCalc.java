@@ -5,7 +5,7 @@ import java.util.Scanner;
 //4. Write a Java program to implement a simple calculator using switch case and enums.
 
 enum Calculator{
-	Addition,Subtraction,Multiplication,Division
+	ADDITION,SUBTRACTION,MULTIPLICATION,DIVISION
 }
 
 public class EnumerationCalc {
@@ -17,21 +17,21 @@ public class EnumerationCalc {
 		System.out.println("Enter second number:");
 		int b = sc.nextInt();
 		
-		Calculator operation = Calculator.Multiplication;
+		Calculator operation = Calculator.MULTIPLICATION;
 
 		switch(operation) {
 		
-		case Addition:
-			System.out.println("Addition:"+ (a+b));
+		case ADDITION:
+			System.out.println(operation+":"+ (a+b));
 			break;
-		case Subtraction:
-			System.out.println("Subtraction:"+ (a-b));
+		case SUBTRACTION:
+			System.out.println(operation+":"+ (a-b));
 			break;
-		case Multiplication:
-			System.out.println("Multiplication:"+ (a*b));
+		case MULTIPLICATION:
+			System.out.println(operation+":"+ (a*b));
 			break;
 		default:
-			System.out.println("Division:"+ (a/b));
+			System.out.println(operation+":"+ (a/b));
 			break;
 		}
 		

@@ -2,17 +2,17 @@ package day4.capg;
 //3. Write a Java program to implement a simple traffic light simulation using enums.
 
 enum TrafficLight{
-	Red,Yellow,Green
+	RED,YELLOW,GREEN
 }
 
 public class Enumeration {
 	public static void main(String[] args) {
-		TrafficLight status = TrafficLight.Red;
+		TrafficLight status = TrafficLight.RED;
 		
-		if(status==TrafficLight.Red) {
+		if(status==TrafficLight.RED) {
 			System.out.println("STOP!");
 		}
-		else if(status==TrafficLight.Yellow) {
+		else if(status==TrafficLight.YELLOW) {
 			System.out.println("PLEASE WAIT..");
 		}
 		else
