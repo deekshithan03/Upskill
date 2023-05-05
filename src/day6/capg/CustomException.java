@@ -1,5 +1,4 @@
 package day6.capg;
-
 //Write a Java program that reads input from the user and validates it using exception handling. 
 //If the input is not valid, the program should throw an exception with a custom error message.
 

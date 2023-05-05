@@ -14,12 +14,12 @@ public class SynchronizationExample {
 	public static void main(String[] args) {
 		Count c = new Count();
 		Runnable obj1 = ()-> {
-			for(int i=1;i<=100;i++) {
+			for(int i=1;i<=1000;i++) {
 				c.increment();
 			}
 		};
 		Runnable obj2 = ()-> {
-			for(int i=1;i<=100;i++) {
+			for(int i=1;i<=1000;i++) {
 				c.increment();
 			}
 		};

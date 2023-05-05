@@ -30,6 +30,7 @@ public class BiConsumerFuncInter {
 				return y;
 		};
 		System.out.println("Larger num:" + isLarger.apply(n1, n2));
+		sc.close();
 	}
 
 }
