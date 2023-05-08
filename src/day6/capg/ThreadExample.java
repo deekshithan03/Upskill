@@ -5,7 +5,7 @@ package day6.capg;
 class Example extends Thread {
 	public void run() { //run() method gets the thread running
 		for (int i = 1; i <= 5; i++) {
-			System.out.println("Hi!");
+			System.out.println("Hi!"+i);
 		}
 	}
 }
